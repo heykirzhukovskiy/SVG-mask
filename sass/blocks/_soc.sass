@@ -1,0 +1,24 @@
+.header
+  height: 20%  
+.soc
+  height: 100%
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+  &-item
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+.fab
+  font-size: 90px
+  color: #c876ff
+  transition: 1s
+  &:hover
+    transform: scale(1.5)
+    transition: 1s
+@media screen and (max-width: 768px)
+  .fab
+    font-size: 70px
+@media screen and (max-width: 500px)
+  .fab
+    font-size: 40px
